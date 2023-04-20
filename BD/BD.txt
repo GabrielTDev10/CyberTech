@@ -1,0 +1,12 @@
+create database CyberTech;
+
+use CyberTech;
+
+CREATE TABLE produto (
+  `codigo` int(11) primary key auto_increment NOT NULL ,
+  `nome` varchar(255) NOT NULL,
+  `descricao` varchar(255) NOT NULL,
+  `valor` decimal(10,2) DEFAULT 0.00,
+  `url_arquivo` varchar(255) DEFAULT NULL
+);
+
